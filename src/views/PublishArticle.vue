@@ -68,7 +68,7 @@ export default {
 				date: Date.now(),
 				author: info.nickname
 			}
-			axios.post('http://10.108.84.79:3000/users/uploadArticle', data)
+			axios.post('http://127.0.0.1:3000/users/uploadArticle', data)
 			.then(res => {
 				const data = res.data.data
 				if(data.upload) {

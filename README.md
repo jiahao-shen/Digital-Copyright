@@ -1,4 +1,4 @@
-<h1 id="argon-design-system"><a href="https://www.creative-tim.com/product/vue-argon-design-system">Vue Argon Design System</a></h1>
+<!-- <h1 id="argon-design-system"><a href="https://www.creative-tim.com/product/vue-argon-design-system">Vue Argon Design System</a></h1>
 
 <p><img src="https://s3.amazonaws.com/creativetim_bucket/products/92/original/opt_argon_vue_thumbnail.jpg?1534236902" alt="Product Gif" /></p>
 
@@ -197,4 +197,21 @@
   <li>Dribbble: <a href="https://dribbble.com/creativetim">https://dribbble.com/creativetim</a></li>
   <li>Google+: <a href="https://plus.google.com/+CreativetimPage">https://plus.google.com/+CreativetimPage</a></li>
   <li>Instagram: <a href="https://www.instagram.com/CreativeTimOfficial">https://www.instagram.com/CreativeTimOfficial</a></li>
-</ul>
+</ul> -->
+
+# 安装并运行IPFS
+- brew cask install ipfs
+- 第一次运行`ipfs init`
+- 否则`ipfs daemon`
+
+# 安装并运行BigchainDB
+- git clone https://github.com/bigchaindb/bigchaindb.git
+- cd bigchaindb
+- 开启`make run`
+
+# 运行后端
+- node backend/bin/www
+
+# 运行前端
+- 开发`npm run serve`
+- 部署`npm run build`
