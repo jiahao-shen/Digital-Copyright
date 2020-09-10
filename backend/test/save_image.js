@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost:27017/', { useNewUrlParser: true });
 
-const User = require('../models/user')
-const Image = require('../models/image')
+const User = require('../models/user');
+const Image = require('../models/image');
 
 // async function saveImage() {
 //   try {
@@ -23,11 +23,11 @@ const Image = require('../models/image')
 // saveImage()
 
 async function getImage() {
-  try {
-    const images = await Image.find({}).select('url')
-    console.log(images)
-  } catch(err) {
-    console.error(err)
-  }
+	try {
+		const images = await Image.find({}).select('url');
+		console.log(images);
+	} catch (err) {
+		console.error(err);
+	}
 }
-getImage()
+getImage();

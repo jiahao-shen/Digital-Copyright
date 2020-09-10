@@ -52,7 +52,7 @@
 
 // // Image.find({
 // //   $where: function() {
-    
+
 // //     if(this.phash.length >= 14){
 // //       return this
 // //     }
@@ -67,7 +67,7 @@
 // //   assert.equal(err, null)
 // //   doc.forEach(image => {
 // //     if(typeof(image.phash) === 'undefined') {
-      
+
 // //     } else {
 // //       if(leven(image.phash, '0e17787070f02c3c') <= 14) {
 // //         console.log(image._id)
@@ -86,15 +86,14 @@
 // //   }
 // // })
 
-const imghash = require('imghash')
-const path = require('path')
-const leven = require('leven')
-const imgPath = path.join(__dirname, '../public/images/原图.jpg')
-const imgPath2 = path.join(__dirname, '../public/images/剪裁.jpg')
+const imghash = require('imghash');
+const path = require('path');
+const leven = require('leven');
+const imgPath = path.join(__dirname, '../public/images/原图.jpg');
+const imgPath2 = path.join(__dirname, '../public/images/剪裁.jpg');
 
-const hash1 = imghash.hash(imgPath)
-const hash2 = imghash.hash(imgPath2)
-Promise.all([hash1, hash2])
-.then(res => {
-  console.log(leven(res[0], res[1]))
-})
+const hash1 = imghash.hash(imgPath);
+const hash2 = imghash.hash(imgPath2);
+Promise.all([hash1, hash2]).then((res) => {
+	console.log(leven(res[0], res[1]));
+});
