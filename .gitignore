@@ -2,7 +2,7 @@
 node_modules
 /dist
 /backend/data
-/log
+log
 
 # local env files
 .env.local
